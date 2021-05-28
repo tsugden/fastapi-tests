@@ -1,5 +1,8 @@
 # pyenv virtual environment
 .python-version
 
+# python
+__pycache__/
+
 # vscode
 .vscode/
