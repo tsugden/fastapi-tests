@@ -11,7 +11,8 @@ def get_settings() -> Settings:
     return Settings()
 
 
-settings = Depends(get_settings())
+#settings = Depends(get_settings())
+settings = Settings()
 
 
 def get_application() -> FastAPI:
@@ -20,6 +21,11 @@ def get_application() -> FastAPI:
 
 
 app = get_application()
+
+
+@app.get("/")
+async def ping_pong():
+    return {"ping": "pong"}
 
 
 if __name__ == "__main__":
