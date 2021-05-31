@@ -1,0 +1,15 @@
+# config
+.env
+
+# python
+__pycache__/
+*.egg-info/
+
+# pyenv
+.python-version
+
+# pytest
+.pytest_cache/
+
+# vscode
+.vscode/
